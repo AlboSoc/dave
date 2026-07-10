@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document Archive</title>
+  <style>
+    :root {
+      --bg: #f5efe4;
+      --panel: rgba(255, 252, 246, 0.92);
+      --text: #1f2933;
+      --muted: #5b6875;
+      --line: #d9cdb8;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --shadow: 0 18px 40px rgba(50, 38, 15, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(180, 83, 9, 0.18), transparent 32%),
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.14), transparent 28%),
+        linear-gradient(180deg, #fbf7ef 0%, var(--bg) 100%);
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 7vw, 3.6rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--muted);
+      max-width: 56rem;
+    }
+
+    .notes {
+      display: grid;
+      gap: 12px;
+      margin: 18px 0 0;
+    }
+
+    .note {
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
+
+    .note strong {
+      color: var(--accent-2);
+    }
+
+    .list {
+      margin-top: 20px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .meta {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background: var(--accent);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .links a.alt {
+      background: var(--accent-2);
+    }
+
+    .links a.ghost {
+      color: var(--text);
+      background: transparent;
+      border: 1px solid var(--line);
+    }
+
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Document Archive</h1>
+      <p class="lead">
+        This GitHub Pages view is the phone-friendly front door for the OpenDocument files in this repository.
+        Use the HTML preview for the easiest browser reading, the PDF preview for GitHub's inline file viewer,
+        and the original file when you want to download or edit it.
+      </p>
+      <div class="notes">
+        <div class="note"><strong>Best on GitHub Pages:</strong> HTML previews in `previews/html/`.</div>
+        <div class="note"><strong>Best in GitHub file view:</strong> PDFs in `previews/pdf/`.</div>
+      </div>
+    </section>
+
+    <section class="list">
+      <article class="card">
+        <h2>Chesterleld Buses</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Chesterleld%20Buses.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Chesterleld%20Buses.pdf">Open PDF</a>
+          <a class="ghost" href="files/Chesterleld%20Buses.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>COACHS 5</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/COACHS%205.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/COACHS%205.pdf">Open PDF</a>
+          <a class="ghost" href="files/COACHS%205.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>DMUS</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/DMUS.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/DMUS.pdf">Open PDF</a>
+          <a class="ghost" href="files/DMUS.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>DONCASTER BUSES</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/DONCASTER%20BUSES.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/DONCASTER%20BUSES.pdf">Open PDF</a>
+          <a class="ghost" href="files/DONCASTER%20BUSES.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Ecclesfleld Buses</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Ecclesfleld%20Buses.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Ecclesfleld%20Buses.pdf">Open PDF</a>
+          <a class="ghost" href="files/Ecclesfleld%20Buses.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>EMUS</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/EMUS.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/EMUS.pdf">Open PDF</a>
+          <a class="ghost" href="files/EMUS.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Holbrook</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Holbrook.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Holbrook.pdf">Open PDF</a>
+          <a class="ghost" href="files/Holbrook.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>LOCOS</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/LOCOS.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/LOCOS.pdf">Open PDF</a>
+          <a class="ghost" href="files/LOCOS.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>LONDON BUSES</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/LONDON%20BUSES.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/LONDON%20BUSES.pdf">Open PDF</a>
+          <a class="ghost" href="files/LONDON%20BUSES.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>london underground</h2>
+        <p class="meta">Original format: ODT document</p>
+        <div class="links">
+          <a href="previews/html/london%20underground.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/london%20underground.pdf">Open PDF</a>
+          <a class="ghost" href="files/london%20underground.odt">Original ODT</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>My Loco Register</h2>
+        <p class="meta">Original format: ODT document</p>
+        <div class="links">
+          <a href="previews/html/My%20Loco%20Register.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/My%20Loco%20Register.pdf">Open PDF</a>
+          <a class="ghost" href="files/My%20Loco%20Register.odt">Original ODT</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>NEW CDS</h2>
+        <p class="meta">Original format: ODT document</p>
+        <div class="links">
+          <a href="previews/html/NEW%20CDS.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/NEW%20CDS.pdf">Open PDF</a>
+          <a class="ghost" href="files/NEW%20CDS.odt">Original ODT</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>NOTT BUSES</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/NOTT%20BUSES.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/NOTT%20BUSES.pdf">Open PDF</a>
+          <a class="ghost" href="files/NOTT%20BUSES.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Sheffild buses</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Sheffild%20buses.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Sheffild%20buses.pdf">Open PDF</a>
+          <a class="ghost" href="files/Sheffild%20buses.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>TRAMS</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/TRAMS.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/TRAMS.pdf">Open PDF</a>
+          <a class="ghost" href="files/TRAMS.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Wetherspoons in England2</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Wetherspoons%20in%20England2.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Wetherspoons%20in%20England2.pdf">Open PDF</a>
+          <a class="ghost" href="files/Wetherspoons%20in%20England2.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Wetherspoons in Scotland</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Wetherspoons%20in%20Scotland.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Wetherspoons%20in%20Scotland.pdf">Open PDF</a>
+          <a class="ghost" href="files/Wetherspoons%20in%20Scotland.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Wetherspoons in Wales</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/Wetherspoons%20in%20Wales.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/Wetherspoons%20in%20Wales.pdf">Open PDF</a>
+          <a class="ghost" href="files/Wetherspoons%20in%20Wales.ods">Original ODS</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>York Buses</h2>
+        <p class="meta">Original format: ODS spreadsheet</p>
+        <div class="links">
+          <a href="previews/html/York%20Buses.html">Open HTML</a>
+          <a class="alt" href="previews/pdf/York%20Buses.pdf">Open PDF</a>
+          <a class="ghost" href="files/York%20Buses.ods">Original ODS</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      Originals live in <code>files/</code>. Generated previews live in <code>previews/html/</code> and <code>previews/pdf/</code>.
+    </footer>
+  </main>
+</body>
+</html>
